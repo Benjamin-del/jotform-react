@@ -69,7 +69,7 @@ const YourApp = () => {
 
 | Prop          | Default | Required (if applicable)              | Description                                                                                                                                                                                                                                 |
 |---------------|---------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| formURL       | -       | Yes                     | URL The URL of your Jotform Form, obtainable from Jotform Form Builder's Publish page. Example:  Example: https://form.jotform.com/211272589254055                                                                                                      |
+| formURL       | -       | Yes                     | URL The URL of your Jotform Form, obtainable from Jotform Form Builder's Publish page. Example:  Example: https://form.jotform.com/211272589254055.\ Or use a Prefilled URL. Example: https://form.jotform.com/211272589254055?name[first]=John&name[last]=Doe                                                                                                     |
 | autoResize    | true    | No                      | If true, the form will automatically resize as needed (e.g., for multi-page forms). Set to false to disable auto-resizing.                                                                         |
 | autoFocus     | true    | No                      | If true, the form will automatically scroll into view as needed. Set to false to disable this behavior.                                                                                                                                        |
 | heightOffset  | 15      | No                      | The number of pixels added to the form's height to prevent browser-specific scroll issues.                                                                                                                                            |
@@ -78,8 +78,22 @@ const YourApp = () => {
 | onSubmit      | -       | No                      | A callback function to execute when the form submission is successful.                                                                                                                                                               |
 | ...rest       |         | No                      | You can directly set any other prop, such as styles, to the iframe element                                                                                                                                                                                    |
 
+### Testing With Storybook
+Using Storybook, you can customize and test the Jotform React Embed component in isolation. To run the Storybook, use the following commands:
+
+```
+npx storybook build
+
+npx run storybook
+```
 
 ## Changelog
+
+### 1.1.2
+
+- Documentation update
+- Storybook update
+- Updated dependencies
 
 ### 1.1.1
 
